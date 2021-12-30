@@ -1,30 +1,141 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import HeroLogo from "../components/animations/hero-anim"
+
+import AlbumCover from "../images/album-cover.png"
+
+import Leo from "../images/leo.png"
+import Will from "../images/will.png"
+import Cory from "../images/cory.png"
+import Jon from "../images/jon.png"
+
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
+    <section className="hero--section">
+      <HeroLogo />
+    </section>
+    <section className="section--dark">
+      <div className="container">
+        <p style={{ padding: "6em 2em", fontSize: "1.5rem" }}>
+          {" "}
+          The band known as Rift was formed in 2006 by the founding memebrs Leo
+          Lopez, William dos Santos, Cory Green, & Jon Matheson. Although never
+          achieving a record deal, the band created and promoted their music
+          over the course of four years. This site is dedicated to them and to
+          the family, friends, and fans that supported them.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div className="container">
+        <h1 className="main-title">Members</h1>
+        <div
+          className="col-container d-f"
+          data-sal="slide-up"
+          data-sal-duration="800"
+          data-sal-easing="ease"
+        >
+          <div className="col">
+            <img className="avatar avatar-tri" src={Leo} alt="picture of Leo" />
+          </div>
+          <div className="col">
+            <h3>
+              Leo Lopez <span>Bass, Guitar</span>
+            </h3>
+            <p>
+              Leo was one of the first founding members of Rift. Although he
+              first started as the lead guitarist, Leo found joy in the rhythm
+              section kicking out some heavy bass guitar.
+            </p>
+          </div>
+        </div>
+        <div
+          className="col-container d-f"
+          data-sal="slide-up"
+          data-sal-duration="800"
+          data-sal-easing="ease"
+        >
+          <div className="col">
+            <h3>
+              William dos Santos <span>Lead Vocals, Keys</span>
+            </h3>
+            <p>
+              Will started the band with Leo during their second year of high
+              school. Will, stepped up for lead vocals and keys after a few
+              years. He describes himself less as a singer and more of a "song
+              and dance man."
+            </p>
+          </div>
+          <div className="col">
+            <img className="avatar avatar-circle" src={Will} alt="picture of Will" />
+          </div>
+        </div>
+        <div
+          className="col-container d-f"
+          data-sal="slide-up"
+          data-sal-duration="800"
+          data-sal-easing="ease"
+        >
+          <div className="col">
+            <img className="avatar avatar-hex" src={Cory} alt="picture of Cory" />
+          </div>
+          <div className="col">
+            <h3>
+              Cory Green <span>Drums, Vocals</span>
+            </h3>
+            <p>
+              Cory, the passion of the group, played alongside his father Ronald
+              Green for years before joining Rift in 2005 before the band was
+              named. Cory helped write the bulk of the lyrics on the later
+              albums and maintained a constant passion for the music.
+            </p>
+          </div>
+        </div>
+        <div
+          className="col-container d-f"
+          data-sal="slide-up"
+          data-sal-duration="800"
+          data-sal-easing="ease"
+        >
+          <div className="col">
+            <h3>
+              Jonathan Matheson <span>Lead Guitar, Vocals</span>
+            </h3>
+            <p>
+              Jon Matheson, a mutli-talented musician and song writer, has been
+              playing and performing music for most of this life. He wrote and
+              produced all of the Rift albums with studio quality sound, all
+              while recording in the garage.
+            </p>
+          </div>
+          <div className="col">
+            <img className="avatar avatar-square" src={Jon} alt="picture of Jon" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="section--dark section--album">
+      <div className="container">
+        <div className="col-container d-f">
+          <div className="col">
+            <img
+              src={AlbumCover}
+              alt="Album Cover Design"
+              className="album-cover"
+            />
+          </div>
+          <div className="col ai-c jc-c" style={{ padding: "2em" }}>
+            <h3>Listen to Rift: Revival</h3>
+            <p>Fancy a walk down memory lane? Take a listen to the album on:</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </Layout>
 )
 
