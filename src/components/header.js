@@ -6,8 +6,9 @@ const Header = ({ siteTitle }) => (
   <header
   >
     <div
-      className="container"
+      className="container d-f jc-sb"
     >
+      <h2>From 2006-2009</h2>
       <a href="" className="button">Listen on Spotify</a>
     </div>
   </header>

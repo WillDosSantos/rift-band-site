@@ -7,6 +7,7 @@ import Seo from "../components/seo"
 import HeroLogo from "../components/animations/hero-anim"
 
 import AlbumCover from "../images/album-cover.png"
+import RiftGlyphs from "../images/rift-glyphs.svg"
 
 import Leo from "../images/leo.png"
 import Will from "../images/will.png"
@@ -16,11 +17,20 @@ import Jon from "../images/jon.png"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <section className="hero--section">
-      <HeroLogo />
+    <section className="hero--section"
+      data-sal="fade-in"
+      data-sal-duration="1200"
+      data-sal-easing="ease"
+    >
+      <HeroLogo/>
     </section>
     <section className="section--dark">
       <div className="container">
+        <img src={RiftGlyphs} alt="Rift glyphs" style={{maxWidth: "300px", margin: "0 auto", display: "block", position: "relative", top: "60px"}}
+        data-sal="slide-up"
+        data-sal-duration="1200"
+        data-sal-easing="ease"
+        />
         <p style={{ padding: "6em 2em", fontSize: "1.5rem" }}>
           {" "}
           The band known as Rift was formed in 2006 by the founding memebrs Leo
@@ -122,14 +132,22 @@ const IndexPage = () => (
     <section className="section--dark section--album">
       <div className="container">
         <div className="col-container d-f">
-          <div className="col">
+          <div className="col"
+          data-sal="slide-right"
+          data-sal-duration="1200"
+          data-sal-easing="ease"
+          >
             <img
               src={AlbumCover}
               alt="Album Cover Design"
               className="album-cover"
             />
           </div>
-          <div className="col ai-c jc-c" style={{ padding: "2em" }}>
+          <div className="col ai-c jc-c" style={{ padding: "2em" }}
+          data-sal="slide-left"
+          data-sal-duration="1200"
+          data-sal-easing="ease"
+          >
             <h3>Listen to Rift: Revival</h3>
             <p>Fancy a walk down memory lane? Take a listen to the album on:</p>
           </div>

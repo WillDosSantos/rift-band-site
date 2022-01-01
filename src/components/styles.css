@@ -13,6 +13,14 @@ header {
   border-bottom: 1px solid #000;
 }
 
+header h2 {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
 .container {
   margin: 0 auto;
   max-width: 960px;
@@ -31,7 +39,6 @@ header {
   width: 100%;
   background-size: cover;
   padding: 8em 0;
-  font-size: 1.5rem;
 }
 
 .section--dark {
@@ -108,19 +115,18 @@ h3 span {
   border-radius: 100%;
   padding: 0 3em;
   position: relative;
-}
-
-.avatar-tri:after {
-  position: absolute;
-  content: "";
-  background: transparent url(../images/tri.svg) no-repeat 0px 0px;
+  z-index: 50;
   display: block;
-  width: 220px;
-  height: 220px;
-  left: 30px;
 }
 
+.avatar-tri {
+  background: transparent url(../images/tri.svg) no-repeat 30px -50px;
+  display: block;
+}
 
+.jc-sb {
+  justify-content: space-between;
+}
 
 .main-title {
   margin-bottom: 0.3em;
