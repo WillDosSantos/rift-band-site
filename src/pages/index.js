@@ -34,10 +34,9 @@ const IndexPage = () => (
         <p style={{ padding: "6em 2em", fontSize: "1.5rem" }}>
           {" "}
           The band known as Rift was formed in 2006 by the founding memebrs Leo
-          Lopez, William dos Santos, Cory Green, & Jon Matheson. Although never
-          achieving a record deal, the band created and promoted their music
-          over the course of four years. This site is dedicated to them and to
-          the family, friends, and fans that supported them.
+          Lopez, William dos Santos, Cory Green, & Jon Matheson. Self produced, the band created and promoted their music
+          over the course of four years. This site is dedicated to the group, to
+          their families, friends, and fans that supported them.
         </p>
       </div>
     </section>

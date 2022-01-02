@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
     <div
       className="container d-f jc-sb"
     >
-      <h2>From 2006-2009</h2>
+      <h2>From 2006-2010</h2>
       <a href="" className="button">Listen on Spotify</a>
     </div>
   </header>
