@@ -32,6 +32,9 @@ header h2 {
   width: 100%;
   min-height: 800px;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section--album {
@@ -48,11 +51,6 @@ header h2 {
 
 #hero-logo {
   max-width: 800px;
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  right: 0px;
-  margin: -70px auto 0 auto;
   padding: 0 2em;
 }
 
@@ -120,11 +118,6 @@ h3 span {
   display: block;
 }
 
-.avatar-tri {
-  background: transparent url(../images/tri.svg) no-repeat 30px -50px;
-  display: block;
-}
-
 .jc-sb {
   justify-content: space-between;
 }
@@ -166,9 +159,5 @@ footer a {
 
   .hero--section {
     min-height: 260px;
-  }
-  #hero-logo {
-    max-width: 260px;
-    margin: -275px auto 0 auto;
   }
 }
