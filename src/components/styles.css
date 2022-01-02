@@ -47,12 +47,13 @@ header h2 {
 }
 
 #hero-logo {
-  max-width: 700px;
+  max-width: 800px;
   position: absolute;
   top: 50%;
   left: 0px;
   right: 0px;
   margin: -70px auto 0 auto;
+  padding: 0 2em;
 }
 
 .button {
@@ -142,4 +143,32 @@ footer {
 }
 footer a {
   color: rgb(205, 53, 94);
+}
+
+.container {
+  flex-direction: row;
+}
+
+.col-container {
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .col-container {
+    flex-direction: column-reverse;
+  }
+  .col-container:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .hero--section {
+    min-height: 260px;
+  }
+  #hero-logo {
+    max-width: 260px;
+    margin: -275px auto 0 auto;
+  }
 }
